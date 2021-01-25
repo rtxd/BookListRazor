@@ -6,6 +6,11 @@
     <title>@ViewData["Title"] - BookListRazor</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    @* Style sheets I added *@
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="toastr.css" rel="stylesheet" />
+    <link href="cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" rel="stylesheet" />
+
 </head>
 <body>
     <header>
@@ -44,6 +49,12 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+@* JS files I added *@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="toastr.js"></script>
+    <script src="cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
 
     @RenderSection("Scripts", required: false)
 </body>
